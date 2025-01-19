@@ -5,6 +5,7 @@
 pwd
 sudo pkg install -y git
 sudo pkg install -y python
+sudo pkg install -y u-boot-rpi
 
 sudo git clone -b releng/14.2 https://git.freebsd.org/src.git /usr/src
 ls -lat /usr/src
