@@ -1,11 +1,11 @@
-name: CI
+name: RaspberryPi
 
 on: [push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: RaspberryPi
+    name: build
     env:
       BRANCH : releng/14.2
       CONFIG: ci/configs/config_i386.sh
