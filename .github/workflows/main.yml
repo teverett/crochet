@@ -1,11 +1,11 @@
 name: CI
 
-on: [push]
+on: [push, pull]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: CI 14.2
+    name: i386
     env:
       BRANCH : releng/14.2
       CONFIG: ci/configs/config_i386.sh
