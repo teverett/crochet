@@ -5,7 +5,7 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: i386
+    name: RaspberryPi
     env:
       BRANCH : releng/14.2
       CONFIG: ci/configs/config_i386.sh
@@ -23,7 +23,7 @@ jobs:
           pkg install -y sudo
 
         run: |
-          sh ci/build_i386.sh  
+          sh ci/build_RaspberryPi.sh  
 
     - uses: actions/upload-artifact@v4
       with:
